@@ -14,12 +14,12 @@ const Today = () => {
         humidity : weather.current.humidity
     }
     return ( 
-        <div>
+        <div className='relative'>
             <p className=' font-poppins font-bold  text-center text-lg text-gray-700'>{`${day}.${month}.${year}`}</p>
-            <div className=' relative text-center flex flex-col w-full h-full'>
+            <div className='  text-center '>
                 <h1 className=' font-roboto text-gray-500 text-[90px] font-bold'>{todayWeather.temp}°</h1>
                 <p className='font-poppins text-gray-400 text-4xl font-normal'>{todayWeather.textCondition}</p>
-                <div className=' font-poppins font-normal text-base text-gray-500 absolute top-[50%] right-[20%] translate-y-[-50%] flex flex-col gap-2'>
+                <div className=' font-poppins font-normal text-base text-gray-500 w-fit absolute top-[50%] right-[-60px] translate-y-[-50%] flex flex-col gap-2'>
                     <div className=' flex gap-2 '>
                         <BsWind />   
                         <span >{todayWeather.windMhp} mhp</span> 
